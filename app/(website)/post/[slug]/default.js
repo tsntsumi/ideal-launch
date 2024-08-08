@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/container";
 import { notFound } from "next/navigation";
-import { PortableText } from "@/lib/sanity/plugins/portabletext";
-import { urlForImage } from "@/lib/sanity/image";
+import { PortableText } from "@/lib/firebase/plugins/portabletext";
+import { urlForImage } from "@/lib/firebase/image";
 import { parseISO, format } from "date-fns";
 
 import CategoryLabel from "@/components/blog/category";

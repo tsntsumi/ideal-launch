@@ -1,6 +1,6 @@
-import { getSettings } from "@/lib/sanity/client";
+import { getSettings } from "@/lib/firebase/client";
 import Footer from "@/components/footer";
-import { urlForImage } from "@/lib/sanity/image";
+import { urlForImage } from "@/lib/firebase/image";
 import Navbar from "@/components/navbar";
 
 async function sharedMetaData(params) {

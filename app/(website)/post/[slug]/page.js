@@ -1,6 +1,6 @@
 import PostPage from "./default";
 
-import { getAllPostsSlugs, getPostBySlug } from "@/lib/sanity/client";
+import { getAllPostsSlugs, getPostBySlug } from "@/lib/firebase/client";
 
 export async function generateStaticParams() {
   return await getAllPostsSlugs();

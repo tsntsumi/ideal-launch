@@ -1,5 +1,5 @@
 import HomePage from "./home";
-import { getAllPosts } from "@/lib/sanity/client";
+import { getAllPosts } from "@/lib/firebase/client";
 
 export default async function IndexPage() {
   const posts = await getAllPosts();

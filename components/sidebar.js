@@ -1,5 +1,5 @@
 import SearchInput from "@/components/ui/search";
-import { urlForImage } from "@/lib/sanity/image";
+import { urlForImage } from "@/lib/firebase/image";
 import Image from "next/image";
 import Link from "next/link";
 import Label from "@/components/ui/label";

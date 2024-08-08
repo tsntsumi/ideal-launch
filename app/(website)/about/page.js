@@ -1,4 +1,4 @@
-import { getAllAuthors, getSettings } from "@/lib/sanity/client";
+import { getAllAuthors, getSettings } from "@/lib/firebase/client";
 import About from "./about";
 
 export default async function AboutPage() {

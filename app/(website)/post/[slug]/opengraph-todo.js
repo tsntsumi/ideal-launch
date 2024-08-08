@@ -1,5 +1,5 @@
 import { ImageResponse } from "@vercel/og";
-import { getPostBySlug } from "@/lib/sanity/client";
+import { getPostBySlug } from "@/lib/firebase/client";
 import OgImage from "@/components/ogimage";
 
 // const InterRegular = fetch(

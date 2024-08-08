@@ -1,4 +1,4 @@
-import { getSettings } from "@/lib/sanity/client";
+import { getSettings } from "@/lib/firebase/client";
 import Contact from "./contact";
 
 export default async function ContactPage() {

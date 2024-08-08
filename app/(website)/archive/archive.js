@@ -1,7 +1,7 @@
 import PostList from "@/components/postlist";
 import Pagination from "@/components/blog/pagination";
 
-import { getPaginatedPosts } from "@/lib/sanity/client";
+import { getPaginatedPosts } from "@/lib/firebase/client";
 
 export default async function Post({ searchParams }) {
   // Fetch the current page from the query parameters, defaulting to 1 if it doesn't exist
