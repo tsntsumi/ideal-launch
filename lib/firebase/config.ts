@@ -1,28 +1,13 @@
-export const useCdn = process.env.NODE_ENV === "production";
-// export const useCdn = false;
+// Import the functions you need from the SDKs you need
+import { initializeApp, getApps } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+import { getFirestore } from "firebase/firestore";
+import { getStorage } from "firebase/storage";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-/**
- * As this file is reused in several other files, try to keep it lean and small.
- * Importing other npm packages here could lead to needlessly increasing the client bundle size, or end up in a server-only function that don't need it.
- */
-
-// both .env required to work
-// NEXT_PUBLIC_ for 3000
-// SANITY_STUDIO_ for 3333 & *.sanity.studio
-export const projectId =
-  (process.env.NEXT_PUBLIC_LAUNCH_PROJECT_ID as string);
-
-export const dataset =
-  process.env.NEXT_PUBLIC_FIREBASE_DATASET || ("production" as string);
-
-// see https://www.sanity.io/docs/api-versioning for how versioning works
-export const apiVersion =
-  process.env.NEXT_PUBLIC_LAUNCH_API_VERSION || "2024-08-08";
-
-// This is the document id used for the preview secret that's stored in your dataset.
-// The secret protects against unauthorized access to your draft content and have a lifetime of 60 minutes, to protect against bruteforcing.
-export const previewSecretId = process.env.SANITY_REVALIDATE_SECRET as string;
-
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 export const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_LAUNCH_APIKEY,
   authDomain: process.env.NEXT_PUBLIC_LAUNCH_AUTHDOMAIN,
@@ -31,5 +16,12 @@ export const firebaseConfig = {
   messagingSenderId: process.env.NEXT_PUBLIC_LAUNCH_MESSAGINGSENDERID,
   appId: process.env.NEXT_PUBLIC_LAUNCH_APPID,
   measurementId: process.env.NEXT_PUBLIC_LAUNCH_MEASUREMENTID
-}
-export default firebaseConfig
+};
+
+// Initialize Firebase
+export const app = typeof window !== 'undefined' && (getApps().length === 0 ? initializeApp(firebaseConfig) : getApps()[0])
+// export const analytics = app && getAnalytics(app);
+
+export const projectId = firebaseConfig.projectId
+
+export default app

@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.alizza-ideal.com
+Host: https://launch.alizza-ideal.com
 
 # Sitemaps
-Sitemap: https://www.alizza-ideal.com/sitemap.xml
+Sitemap: https://launch.alizza-ideal.com/sitemap.xml

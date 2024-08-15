@@ -7,16 +7,16 @@ export const dynamic = "force-dynamic";
 
 export const runtime = "edge";
 
-export default async function ArchivePage({ searchParams }) {
+export default function ArchivePage({ searchParams }) {
   return (
     <>
       <Container className="relative">
         <h1 className="text-center text-3xl font-semibold tracking-tight dark:text-white lg:text-4xl lg:leading-snug">
-          Archive
+          書庫
         </h1>
         <div className="text-center">
           <p className="mt-2 text-lg">
-            See all posts we have ever written.
+            これまでに書いたすべての記事をお読みください
           </p>
         </div>
         <Suspense

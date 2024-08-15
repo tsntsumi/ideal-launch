@@ -47,3 +47,5 @@ next-env.d.ts
 /.sanity
 /dist
 /output-build.log
+/lib/firebase/ideal-launch-private-key.json
+/.firebase/

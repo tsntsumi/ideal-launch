@@ -63,7 +63,7 @@ export default function PostList({
               </span>
             )}
           </Link>
-        </div>
+    </div>
 
         <div className={cx(minimal && "flex items-center")}>
           <div>
@@ -144,7 +144,18 @@ export default function PostList({
                 )}
               </time>
             </div>
-          </div>
+          </Link>
+          <span className="text-xs text-gray-300 dark:text-gray-600">
+            &bull;
+          </span>
+          <time
+            className="truncate text-sm"
+            dateTime={post?.publishedAt || post._createdAt}>
+            {format(
+              parseISO(post?.publishedAt || post._createdAt),
+              "MMMM dd, yyyy"
+            )}
+          </time>
         </div>
       </div>
     </>
