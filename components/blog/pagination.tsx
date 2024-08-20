@@ -44,13 +44,13 @@ export default function Pagination({
           onClick={handlePrevPage}
           className="relative inline-flex items-center gap-1 rounded-l-md border border-gray-300 bg-white px-3 py-2 pr-4 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 disabled:pointer-events-none disabled:opacity-40 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300">
           <ChevronLeftIcon className="h-3 w-3" aria-hidden="true" />
-          <span>Previous</span>
+          <span>前へ</span>
         </button>
         <button
           onClick={handleNextPage}
           disabled={isLastPage}
           className="relative inline-flex items-center gap-1 rounded-r-md border border-gray-300 bg-white px-3 py-2 pl-4 text-sm font-medium text-gray-500 hover:bg-gray-50 focus:z-20 disabled:pointer-events-none disabled:opacity-40 dark:border-gray-500 dark:bg-gray-800 dark:text-gray-300">
-          <span>Next</span>
+          <span>次へ</span>
           <ChevronRightIcon className="h-3 w-3" aria-hidden="true" />
         </button>
       </nav>

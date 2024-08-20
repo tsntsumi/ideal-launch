@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { PortableText } from "@/lib/sanity/plugins/portabletext";
-import { urlForImage } from "@/lib/sanity/image";
+import { PortableText } from "@/lib/firebase/plugins/portabletext";
+import { urlForImage } from "@/lib/firebase/image";
 import Link from "next/link";
 
 export default function AuthorCard({ author }) {

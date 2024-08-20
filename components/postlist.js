@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { cx } from "@/utils/all";
-import { urlForImage } from "@/lib/sanity/image";
+import { urlForImage } from "@/lib/firebase/image";
 import { parseISO, format } from "date-fns";
 import { PhotoIcon } from "@heroicons/react/24/outline";
 import CategoryLabel from "@/components/blog/category";
@@ -63,7 +63,7 @@ export default function PostList({
               </span>
             )}
           </Link>
-        </div>
+    </div>
 
         <div className={cx(minimal && "flex items-center")}>
           <div>
@@ -144,7 +144,18 @@ export default function PostList({
                 )}
               </time>
             </div>
-          </div>
+          </Link>
+          <span className="text-xs text-gray-300 dark:text-gray-600">
+            &bull;
+          </span>
+          <time
+            className="truncate text-sm"
+            dateTime={post?.publishedAt || post._createdAt}>
+            {format(
+              parseISO(post?.publishedAt || post._createdAt),
+              "MMMM dd, yyyy"
+            )}
+          </time>
         </div>
       </div>
     </>

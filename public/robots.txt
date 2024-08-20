@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://stablo-pro.web3templates.com
+Host: https://launch.alizza-ideal.com
 
 # Sitemaps
-Sitemap: https://stablo-pro.web3templates.com/sitemap.xml
+Sitemap: https://launch.alizza-ideal.com/sitemap.xml

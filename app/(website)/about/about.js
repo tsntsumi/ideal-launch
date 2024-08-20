@@ -1,5 +1,5 @@
 import Container from "@/components/container";
-import { urlForImage } from "@/lib/sanity/image";
+import { urlForImage } from "@/lib/firebase/image";
 import Image from "next/image";
 import Link from "next/link";
 

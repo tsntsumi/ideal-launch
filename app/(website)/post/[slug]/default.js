@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Container from "@/components/container";
 import { notFound } from "next/navigation";
-import { PortableText } from "@/lib/sanity/plugins/portabletext";
-import { urlForImage } from "@/lib/sanity/image";
+import { PortableText } from "@/lib/firebase/plugins/portabletext";
+import { urlForImage } from "@/lib/firebase/image";
 import { parseISO, format } from "date-fns";
 
 import CategoryLabel from "@/components/blog/category";
@@ -98,7 +98,7 @@ export default function Post(props) {
             <Link
               href="/"
               className="bg-brand-secondary/20 rounded-full px-5 py-2 text-sm text-blue-600 dark:text-blue-500 ">
-              ← View all posts
+              ← すべての記事
             </Link>
           </div>
           {post.author && <AuthorCard author={post.author} />}

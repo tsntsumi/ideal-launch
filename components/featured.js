@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { urlForImage } from "@/lib/sanity/image";
+import { urlForImage } from "@/lib/firebase/image";
 import { parseISO, format } from "date-fns";
 import { cx } from "@/utils/all";
 import Link from "next/link";

@@ -1,5 +1,6 @@
 import { ImageResponse } from "@vercel/og";
-import { getPostBySlug } from "@/lib/sanity/client";
+import { initAdmin } from "@/lib/firebase/admin";
+import { getPostBySlug } from "@/lib/firebase/posts";
 import OgImage from "@/components/ogimage";
 
 // const InterRegular = fetch(
@@ -11,6 +12,7 @@ const InterBold = fetch(
 ).then(res => res.arrayBuffer());
 
 export default async function handler({ params }) {
+  await initAdmin()
   const post = await getPostBySlug(params.slug);
 
   const fontData = await InterBold;

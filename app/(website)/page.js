@@ -1,7 +1,9 @@
 import HomePage from "./home";
-import { getAllPosts } from "@/lib/sanity/client";
+import { initAdmin } from "@/lib/firebase/admin"
+import { getAllPosts } from '@/lib/firebase/posts' 
 
 export default async function IndexPage() {
+  await initAdmin()
   const posts = await getAllPosts();
   return <HomePage posts={posts} />;
 }
