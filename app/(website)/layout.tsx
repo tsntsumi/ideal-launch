@@ -1,6 +1,7 @@
-import { getSettings } from "@/lib/firebase/client";
-import Footer from "@/components/footer";
+import { initAdmin } from "@/lib/firebase/admin"
+import { getSettings } from "@/lib/firebase/settings";
 import { urlForImage } from "@/lib/firebase/image";
+import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 
 async function sharedMetaData(params) {
@@ -44,18 +45,21 @@ async function sharedMetaData(params) {
 }
 
 export async function generateMetadata({ params }) {
+  await initAdmin()
   return await sharedMetaData(params);
 }
 
 export default async function Layout({ children, params }) {
-  const settings = await getSettings();
+  await initAdmin()
+  const settings = await getSettings()
+
   return (
     <>
       <Navbar {...settings} />
 
       <div>{children}</div>
 
-      <Footer {...settings} />
+    <Footer {...settings} />
     </>
   );
 }

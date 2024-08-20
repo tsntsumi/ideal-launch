@@ -49,3 +49,6 @@ next-env.d.ts
 /output-build.log
 /lib/firebase/ideal-launch-private-key.json
 /.firebase/
+/output-*.log
+/output-*.log
+/output.*.log

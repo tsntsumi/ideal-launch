@@ -1,6 +1,6 @@
 import PostPage from "./default";
-
-import { getAllPostsSlugs, getPostBySlug } from "@/lib/firebase/client";
+import { initAdmin } from "@/lib/firebase/admin"
+import { getAllPostsSlugs, getPostBySlug } from "@/lib/firebase/posts";
 
 export async function generateStaticParams() {
   return await getAllPostsSlugs();
@@ -8,7 +8,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const post = await getPostBySlug(params.slug);
-  return { title: post.title };
+  return post
 }
 
 export default async function PostDefault({ params }) {
