@@ -46,3 +46,6 @@ next-env.d.ts
 # Sanity CMS
 /.sanity
 /dist
+/.firebase/
+/lib/firebase/ideal-launch-private-key.json
+/output.dev.log
