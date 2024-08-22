@@ -1,13 +1,15 @@
 import { Suspense } from "react";
+import { initAdmin } from "@/lib/firebase/admin"
 import Container from "@/components/container";
 import Archive from "./archive";
 import Loading from "@/components/loading";
 
 export const dynamic = "force-dynamic";
 
-export const runtime = "edge";
+// export const runtime = "edge";
 
-export default function ArchivePage({ searchParams }) {
+export default async function ArchivePage({ searchParams }) {
+  await initAdmin()
   return (
     <>
       <Container className="relative">
@@ -25,6 +27,7 @@ export default function ArchivePage({ searchParams }) {
           <Archive searchParams={searchParams} />
         </Suspense>
       </Container>
+        これまでに書いた記事です。お楽しみください。
     </>
   );
 }

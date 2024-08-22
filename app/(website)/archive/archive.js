@@ -1,6 +1,6 @@
 import PostList from "@/components/postlist";
 import Pagination from "@/components/blog/pagination";
-// import { getPaginatedPosts } from "@/lib/firebase/admin";
+import { getPaginatedPosts } from "@/lib/firebase/posts";
 
 export default async function Post({ searchParams }) {
   // Fetch the current page from the query parameters, defaulting to 1 if it doesn't exist
@@ -13,10 +13,10 @@ export default async function Post({ searchParams }) {
   // Define the parameters for fetching posts based on the current page
   const params = {
     pageIndex: (pageIndex - 1) * POSTS_PER_PAGE,
-    limit: pageIndex * POSTS_PER_PAGE
+    limitIndex: pageIndex * POSTS_PER_PAGE
   };
 
-  const posts = [] //await getPaginatedPosts(params);
+  const posts = await getPaginatedPosts(params);
 
   // Check if the current page is the first or the last
   const isFirstPage = pageIndex < 2;

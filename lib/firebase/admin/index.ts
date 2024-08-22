@@ -1,6 +1,7 @@
 import "server-only"
- 
+
 import admin from "firebase-admin"
+import { initializeFirestore } from 'firebase-admin/firestore'
  
 interface FirebaseAdminAppParams {
   projectId: string
@@ -26,13 +27,15 @@ export function createFirebaseAdminApp(params: FirebaseAdminAppParams) {
     privateKey,
   })
  
-  return admin.initializeApp({
+  const app = admin.initializeApp({
     credential: cert,
     projectId: params.projectId,
     storageBucket: params.storageBucket,
   })
+  admin.firestore().settings({ignoreUndefinedProperties:true});
+  return app
 }
- 
+
 export async function initAdmin() {
   const params = {
     projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID as string,
