@@ -18,7 +18,7 @@
     "categories": ["mindset"],
     "slug": { "current": "avoid-failure-to-achieve-ideal" },
     "status": "published",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/avoid-failure-to-achieve-ideal.gif", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/avoid-failure-to-achieve-ideal.gif", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "excerpt": "多くの人が失敗する理由は、ビジョンの欠如ではありません。決意の欠如です。\n\n決意するには、まずコストを計算することが大切です。\n\n犠牲を払ってもいいと思ったとしても、\n自分を傷つけてもいいということではありません。\n\n常にコストを意識して下さい。",
     "body": [
       {
@@ -51,7 +51,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/client-acquisition-tips.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/client-acquisition-tips.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["marketing"],
     "slug": { "current": "client-acquisition-tips" },
     "tags": [],
@@ -81,7 +81,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/small-local-store-business-forecast-for-2024.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/small-local-store-business-forecast-for-2024.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["marketing"],
     "title": "2024年の小規模地元店舗ビジネス予想",
     "slug": { "current": "small-local-store-business-forecast-for-2024" },
@@ -121,7 +121,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/does-your-homepege-design-company-working.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/does-your-homepege-design-company-working.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "title": "あなたのホームページ会社は働いてますか？",
     "slug": { "current": "does-your-homepege-design-company-working" },
     "status": "published",
@@ -172,7 +172,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/ask-ai-10-mistakes-coaching-business-startup.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/ask-ai-10-mistakes-coaching-business-startup.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["mindset"],
     "title": "AIに聞く！コーチング起業一年目に犯しがちな間違い１０個",
     "body": [
@@ -202,7 +202,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/pricing-for-coaches.jpeg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/pricing-for-coaches.jpeg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["marketing"],
     "title": "コーチが価格を設定する際に考慮すべきこと",
     "slug": { "current": "pricing-for-coaches" },
@@ -250,7 +250,7 @@
     ],
     "slug": { "current": "top-one-percent-for-one-houre-rule" },
     "status": "published",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/top-one-percent-for-one-houre-rule.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/top-one-percent-for-one-houre-rule.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "tags": [
       "生産性",
       "読書",
@@ -276,7 +276,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/10-traits-of-untrustworthy-people.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/10-traits-of-untrustworthy-people.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["mindset"],
     "title": "信用ならない人の特徴10",
     "body": [
@@ -307,7 +307,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/5-advantages-of-concentration-and-attention-like-esp.jpeg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/5-advantages-of-concentration-and-attention-like-esp.jpeg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "title": "集中力と注意力が高い人の、まるで超能力のような5つの利点",
     "body": [
       {
@@ -343,7 +343,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/gaining-real-strength.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/gaining-real-strength.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["encourage"],
     "title": "真の強さを手に入れる：50代からのコーチング起業を成功に導くヒント",
     "body": [
@@ -379,7 +379,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/humiliation-is-a-bridge-to-coaching-launch.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/humiliation-is-a-bridge-to-coaching-launch.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["encourage"],
     "title": "屈辱はコーチング起業への架け橋：50代からの挑戦を支えるヒント",
     "body": [
@@ -432,7 +432,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/coaching-and-consulting.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/coaching-and-consulting.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["empower"],
     "title": "コーチングとコンサルティングの比較：詳細解説と考察（完全版）",
     "body": [
@@ -469,7 +469,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/useful-content-has-a-significant-impact.jpeg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/useful-content-has-a-significant-impact.jpeg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["marketing"],
     "title": "役立つコンテンツには大きな効果がある",
     "slug": { "current": "useful-content-has-a-significant-impact" },
@@ -514,7 +514,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/compass-of-confidence.png", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/compass-of-confidence.png", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["empower"],
     "title": "優れたコーチは「自信の羅針盤」となる：クライアントの「できる」を導き出すために",
     "slug": { "current": "compass-of-confidence" },
@@ -565,7 +565,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/eight-psychological-tricks-to-use-at-work.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/eight-psychological-tricks-to-use-at-work.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["mindset"],
     "title": "仕事に使える心理トリック８選",
     "slug": { "current": "eight-psychological-tricks-to-use-at-work" },
@@ -598,7 +598,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/use-your-strengths-to-become-independent-in-coaching.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/use-your-strengths-to-become-independent-in-coaching.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["mindset"],
     "title": "あなたの強みを活かして、コーチングで独立しよう！",
     "body": [
@@ -638,7 +638,7 @@
     "slug": { "current": "4-steps-to-sell-a-cup-of-orange-juice" },
     "status": "published",
     "excerpt": "オレンジを売るなんて簡単だって思うでしょ？\n\nでも、ものを売るという表面的に単純に見えることでも、その裏側では戦略的な高いスキルが必要です。\n\nこの記事では、そんな誰かにものを売るという高度なスキルを、あなたにもできるテクニックを簡単な４ステップに落とし込んで紹介します。",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/4-steps-to-sell-a-cup-of-orange-juice.gif", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/4-steps-to-sell-a-cup-of-orange-juice.gif", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "title": "[セールスのコツ] オレンジを売る４ステップ",
     "tags": [
       "Sales",
@@ -655,30 +655,12 @@
         "value": "### A. 「売込み」によるアプローチ\n\n> 新鮮なオレンジはいかが？\n>\n> 私たちのオレンジジュースは、採れたてで新鮮です。\n>\n> しかも、無農薬で栽培されたオレンジです。\n>\n> お一つ、いかがですか？"
       },
       {
-        "type": "images",
-        "value": [
-          "images/u9br6_orange-benefits.jpg"
-        ]
-      },
-      {
         "type": "text",
         "value": "### B. 「共感」によるアプローチ\n\n> お客さん、のどが渇いてませんか？\n>\n> こちらは、このオレンジから搾った無料サンプルのオレンジジュースです。\n>\n> オレンジも単品で１個から販売しています。\n>\n> 爽やかなオレンジスムージーの無料レシピリーフレットもついてます。\n>\n> お一つ、いかがですか？　\n"
       },
       {
-        "type": "images",
-        "value": [
-          "images/5yjhu_orange-juice-is-here.jpg"
-        ]
-      },
-      {
         "type": "text",
         "value": "## 売込みして嫌がられないための「共感」アプローチ\n\nここからはBの「共感」によるアプローチを深堀りします。\n\nだれだって、売り込みされるのは嫌いですし、ものを売るプロでも売り込みをして嫌われるのは好きではありません。\n\n逆に、経験豊富なもの売りほど、Bの「共感」によるアプローチを好む傾向があります。\n\nつまり、売込みをしたくないというあなたの感覚は正しいし、人として正常です。\n\n### 「売込み」アプローチと「共感」アプローチの差とは？\n\nほとんどの人は、ものを売ろうとした時、商品自体の物理的な品質と、スペックを優先してしまいます。商品の最高の機能を全てリストアップして、論理と理屈で買うように説き伏せようとしてしまいます。\n\n何が問題ですって？\n\n> 人は理屈でものを買いません。\n>\n> 誰だって感情を持っています。\n> 欲しいという衝動によって購入します。\n>\n> あ！この色、かわいい！！買お！\n>\n> 買った後で、ロジックで自分の行動を正当化します。\n>\n> 「こんなに品質もスペックもいいんだから、いい買い物をした」と。\n\nものを売るための最良の方法は、\n共感と感情とともに買い手とコミュニケーションすることです。"
-      },
-      {
-        "type": "images",
-        "value": [
-          "images/de0l3_sympathy.jpg"
-        ]
       },
       {
         "type": "text",
@@ -728,7 +710,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/money-is-fuel-not-goal.jpeg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/money-is-fuel-not-goal.jpeg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["encourage"],
     "title": "お金は燃料。ゴールではない",
     "body": [
@@ -762,7 +744,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/sign-of-strong-mentality.jpeg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/sign-of-strong-mentality.jpeg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["mindset"],
     "title": "精神力の強い人の特徴",
     "body": [
@@ -803,7 +785,7 @@
     "slug": { "current": "to-be-get-start-hastle-side-hastle" },
     "status": "published",
     "tags": [],
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/to-be-get-start-hastle-side-hastle.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/to-be-get-start-hastle-side-hastle.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["mindset"],
     "__collections__": {}
   },
@@ -824,7 +806,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/customers-not-interested-in-your-certificate.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/customers-not-interested-in-your-certificate.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["marketing"],
     "title": "お客はあなたの資格に興味はありません",
     "slug": { "current": "customers-not-interested-in-your-certificate" },
@@ -857,7 +839,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/multitasking-trap-and-productivity.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/multitasking-trap-and-productivity.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["empower"],
     "title": "成果を出すヒント｜マルチタスクの罠と、生産性を爆上げする秘訣",
     "body": [
@@ -896,7 +878,7 @@
     },
     "author": "kikuo@alizza-ideal.com ",
     "title": "地域検索のランキングを改善するためのヒント",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/guide-for-local-search-engine-optimization.gif", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/guide-for-local-search-engine-optimization.gif", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "slug": { "current": "guide-for-local-search-engine-optimization" },
     "tags": [
       "Local SEO",
@@ -931,7 +913,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/five-reasons-to-jump-off-the-rail-of-being-a-salaried-worker.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/five-reasons-to-jump-off-the-rail-of-being-a-salaried-worker.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["mindset"],
     "title": "会社員から起業家へ：サラリーマンというレールから飛び降りる5つの理由",
     "slug": { "current": "five-reasons-to-jump-off-the-rail-of-being-a-salaried-worker" },
@@ -978,7 +960,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/tips-for-company-employees-to-start-a-side-business-or-start-their-own-business.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/tips-for-company-employees-to-start-a-side-business-or-start-their-own-business.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["mindset"],
     "title": "会社員が副業や起業を始めるためのヒント：日々の仕事と新しい挑戦を両立させる方法",
     "body": [
@@ -1018,7 +1000,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/how-to-generate-web-content-using-google-gemini.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/how-to-generate-web-content-using-google-gemini.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["marketing"],
     "title": "WebサイトコンテンツをGeminiを使う方法",
     "body": [
@@ -1049,7 +1031,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/how-to-increase-traffic-without-seo.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/how-to-increase-traffic-without-seo.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["marketing"],
     "title": "SEOなしでホームページに訪問者を集める方法",
     "body": [
@@ -1112,7 +1094,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/the-future-of-remote-coaching.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/the-future-of-remote-coaching.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["mindset"],
     "title": "リモートコーチングの台頭",
     "body": [
@@ -1151,7 +1133,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/magic-habits-for-brain-training.jpeg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/magic-habits-for-brain-training.jpeg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "title": "脳を鍛える魔法の習慣",
     "body": [
       {
@@ -1203,7 +1185,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/buying-is-survival.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/buying-is-survival.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["marketing"],
     "title": "買い物はサバイバル",
     "slug": { "current": "buying-is-survival" },
@@ -1236,7 +1218,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/secret-to-shining-in-niche-markets.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/secret-to-shining-in-niche-markets.jpg", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "categories": ["mindset"],
     "title": "会社員のコーチング起業：咲き誇るニッチ市場で輝く秘訣",
     "slug": { "current": "secret-to-shining-in-niche-markets" },
@@ -1317,7 +1299,7 @@
       }
     },
     "author": "kikuo@alizza-ideal.com",
-    "mainImage": { "asset": "gs://ideal-launch.appspot.com/images/posts/30days-seo-challenge-day-1.gif", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
+    "mainImage": { "asset": "images/posts/30days-seo-challenge-day-1.gif", "alt": "hero image", "caption": "", "width": "1024", "height": "574" },
     "title": "３０日SEOチャレンジ：１日目",
     "slug": { "current": "30days-seo-challenge-day-1" },
     "tags": [
@@ -1334,20 +1316,8 @@
         "value": "# Day 1: タイトルと説明をオーガニゼーション！最適化する\n\n第一日目は、タイトルと説明の最適化です。\n\n何かを探している人が、検索結果ページで最初に目にするのは、\nホームページのタイトルとURL、そしてホームページの説明です。\n\nホームページのタイトルは、ページのヘッダー部分で設定します。\nHTMLだとこの部分\n\n```\n<head>\n  <title>ページのタイトル</title>\n  <meta name=\"description\" content=\"ページの説明\" />\n</head>\n```\nこの**ページのタイトル**を短く簡潔に書くことで検索順位が上がります。\n\n**ページの説明**には、ページの内容を正確に表す要約を書いてください。\n\n実は、**ページの説明**を書いても検索順位は上がらないと言われています。\n\nじゃあなんでページの説明が効果的かと言うと、検索結果ページを見た人がここを読むからです。"
       },
       {
-        "type": "images",
-        "value": [
-          "images/1wcsd_Screenshot 2024-02-18 at 1.41.10 PM.png"
-        ]
-      },
-      {
         "type": "text",
         "value": "検索結果にURLとタイトルしかなかったら、どう思いますか？\n\n検索したキーワードと同じタイトルのページならクリックする可能性はあります。\n\nでも、キーワードと少しくらい違っていても、自分が探していた事が説明に書かれていたとしたらどうでしょうか？\n\nクリックしたくなりますよね？\n\nSEOは、Googleの検索アルゴリズムのことばかり意識してもだめなんです。\n\nGoogle検索の向こう側で、検索している人間も意識しないとうまく行きません。\nだって、ホームページを読んでほしいのはGoogleの検索エンジンじゃないですよね？\n\nあなたが読んでほしいのは、人間にであり、お客さんに読んでもらいたいんですよね。"
-      },
-      {
-        "type": "images",
-        "value": [
-          "images/zy0r6_AdobeStock_208373038.jpg"
-        ]
       },
       {
         "type": "text",

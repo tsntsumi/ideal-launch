@@ -1,8 +1,18 @@
 import Markdown from 'react-markdown'
 
 export const PortableText = props => {
-  const text = props.value?.replace(/\\n/g, "\n")
+  const {value} = props
   return (
-    <Markdown>{text}</Markdown>
-  )
+    <>
+    {value && value.map((e, i) => {
+      if (e.type !== 'text') {
+        return <></>
+      }
+      if (!e.value) {
+        return <></>
+      }
+      const text = e.value.replace(/\\n/g, "\n")
+      return <Markdown key={i}>{text}</Markdown>
+    })}
+    </>)
 }

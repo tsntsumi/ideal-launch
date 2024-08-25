@@ -9,7 +9,7 @@ async function sharedMetaData(params) {
 
   return {
     // enable this for resolving opengraph image
-    // metadataBase: new URL(settings.url),
+    metadataBase: new URL(settings?.url || 'https://launch.alizza-ideal.com'),
     title: {
       default:
         settings?.title ||
