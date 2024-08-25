@@ -1,3 +1,21 @@
+import 'server-only'
+import { getFirestore, DocumentSnapshot } from 'firebase-admin/firestore'
+import { Author } from '@/lib/firebase/types'
+
+const NullAuthor: Author = {
+  _id: "",
+  name: "",
+  bio: "",
+  image: {
+    alt: "",
+    caption: "",
+    asset: "",
+    width: 32,
+    height: 32,
+    src: null,
+  },
+  slug: { current: "" }
+}
 
 export async function authorFromDoc(doc: DocumentSnapshot<Author>): Promise<Author> {
   // const author = doc.data()
@@ -11,7 +29,7 @@ export async function authorFromDoc(doc: DocumentSnapshot<Author>): Promise<Auth
   //   author.image.src = await getStorage().ref(author.image.asset).getDownloadURL()
   //   await doc.set(author)
   // }
-  // return author
+  return NullAuthor
 }
 
 export async function getAllAuthors() {

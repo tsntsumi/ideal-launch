@@ -1,8 +1,8 @@
 import 'server-only'
-import { getStorage, getDownloadURL, File } from 'firebase-admin/storage'
+import { getStorage, getDownloadURL } from 'firebase-admin/storage'
 
-export async function urlForPath(path: string): Promise<File> {
-  const fileOf = (path: string): File => {
+export async function urlForPath(path: string): Promise<string|null> {
+  const fileOf = (path: string) => {
     try {
       const b = getStorage().bucket()
       const f = b.file(path)
@@ -10,14 +10,14 @@ export async function urlForPath(path: string): Promise<File> {
     } catch (e) {
       console.error('urlForPath caught bucket/file:', path,
                     'exception:', e.toString())
-      return "/img/logo.svg"
+      return null
     }
   }
 
   try {
     const file = fileOf(path)
     if (!file) {
-      return null
+      return "/img/logo.svg"
     }
     const url = await getDownloadURL(file)
     return url

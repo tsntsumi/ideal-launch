@@ -1,6 +1,6 @@
-import { ImageSource } from "./types"
+import { Image } from "./types"
 
-export const urlForImage = (source: ImageSource): ImageSource | null => {
+export const urlForImage = (source: Image|null|undefined): Image | null => {
   if (!source) {
     return null
   }
@@ -25,6 +25,8 @@ export const urlForImage = (source: ImageSource): ImageSource | null => {
 
   source.width ||= (width || 256)
   source.height ||= (height || 256)
+
+  source.blurDataURL = `iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNsnbOmHgAFyQJOYpCKIwAAAABJRU5ErkJggg==`
 
   return source
 }

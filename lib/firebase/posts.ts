@@ -1,75 +1,41 @@
 import 'server-only'
-import { getFirestore } from 'firebase-admin/firestore'
+import { getFirestore, QueryDocumentSnapshot } from 'firebase-admin/firestore'
 import { urlForImage } from '@/lib/firebase/image'
 import { urlForPath } from '@/lib/firebase/storage'
-// import { initAdmin } from '@/lib/firebase/admin'
-// import { getStorage, getDownloadURL } from 'firebase-admin/storage'
-// import {
-//   getFirestore, QueryDocumentSnapshot, DocumentData, Timestamp
-// } from 'firebase-admin/firestore'
-// import {
-//   Author, Category, Post
-// } from '@/lib/firebase/types'
-// import { ImageSource } from '@/lib/firebase/admin/types'
-// 
-// const NullSlug = {
-//   current: ""
+import { Image, Author, Category, Post,
+         NullSlug, NullAuthor, NullCategory } from '@/lib/firebase/types'
+
+
+// async function urlForPath(bucketname: string, path: string): Promise<string> {
+//   if (!bucketname || !path) {
+//     return "/img/logo.svg"
+//   }
+//   const file = getStorage().bucket(bucketname).file(path)
+//   const url = await getDownloadURL(file)
+//   return url
 // }
-// 
-// const NullAuthor: Author = {
-//   _id: "",
-//   name: "",
-//   bio: "",
-//   image: {
-//     alt: "",
-//     caption: "",
-//     asset: "",
-//     width: 32,
-//     height: 32,
-//     src: null,
-//   },
-//   slug: NullSlug
-// }
-// 
-// const NullCategory: Category = {
-//   _id: "",
-//   color: "",
-//   count: 0,
-//   description: "",
-//   title: "",
-//   slug: NullSlug
-// }
-// 
-//async function urlForPath(bucketname: string, path: string): Promise<string> {
-  //   if (!bucketname || !path) {
-  //     return "/img/logo.svg"
-  //   }
-  //   const file = getStorage().bucket(bucketname).file(path)
-  //   const url = await getDownloadURL(file)
-  //   return url
-//}
-// 
+
 async function authorForSlug(slug: string) {
-  //   const authors = await getFirestore().collection('authors')
-  //                                       .where('slug.current', '==', slug).get()
-  //   if (authors.empty) {
-  //     return NullAuthor
-  //   }
-  //   const doc = authors.docs.shift()
-  //   if (!doc) {
-  //     return NullAuthor
-  //   }
-  //   const author = doc?.data() as Author
-  //   const image = urlForImage(author.image)
-  //   if (!image) {
-  //     return author
-  //   }
-  //   author.image = image as ImageSource
-  //   if (!author.image.src?.length) {
-  //     author.image.src = await urlForPath('images/authors', author.image.asset)
-  //     await doc.ref.set(author)
-  //   }
-  //   return author
+  const authors = await getFirestore().collection('authors')
+                                      .where('slug.current', '==', slug).get()
+  if (authors.empty) {
+    return NullAuthor
+  }
+  const doc = authors.docs.shift()
+  if (!doc) {
+    return NullAuthor
+  }
+  const author = doc?.data() as Author
+  const image = urlForImage(author.image)
+  if (!image) {
+    return author
+  }
+  author.image = image as Image
+  if (!author.image.src?.length) {
+    author.image.src = await urlForPath(author.image.asset)
+    await doc.ref.set(author)
+  }
+  return author
 }
 // 
 async function categoriesForNames(catnames: string[]): Promise<(Category)[]> {
@@ -86,7 +52,7 @@ async function categoriesForNames(catnames: string[]): Promise<(Category)[]> {
   }))
   return categories
 }
-// 
+
 async function postFromDoc(
   doc
 ) : Promise<Post | null> {
@@ -102,7 +68,7 @@ async function postFromDoc(
   }
   const post: Post = {
     _id: doc.id,
-    author: d.author, // await authorForSlug(d.author),
+    author: await authorForSlug(d.author),
     body: d.body,
     categories: await categoriesForNames(d.categories),
     createdAt: d.createdAt.toDate().toISOString(),
@@ -130,13 +96,10 @@ export async function getPaginatedPosts({ limitIndex, pageIndex = 0}) {
                                       .limit(limitIndex)
                                       .get()
   if (!entries || entries.empty) {
-    return new Response('[]', {
-      status: 403,
-      headers: { 'content-type': 'application/json' }
-    })
+    return null
   }
   
-  const docs = entries.docs.slice(pageIndex)
+  const docs = entries.docs?.slice(pageIndex)
   
   const posts = await Promise.all(docs.map(async (doc) => (
     await postFromDoc(doc)
@@ -144,34 +107,39 @@ export async function getPaginatedPosts({ limitIndex, pageIndex = 0}) {
   
   return posts
 }
-// 
+
 export async function getAllPosts() {
   return await getPaginatedPosts({limitIndex: 9999, pageIndex: 0})
 }
-// 
+
 export async function getAllPostsSlugs() {
-//   await initAdmin()
-//   const posts = await getFirestore().collection('posts')
-//                                     .where('status', '==', 'published')
-//                                     .orderBy('publishedAt', 'desc')
-//                                     .orderBy('createdAt', 'desc').get()
-//   if (!posts || posts.empty) {
-//     return []
-//   }
-//   const slugs = await Promise.all(posts.docs.map(async (p) => (
-//     { slug: (await p.get('slug')?.current) || "" }
-//   )))
-//   return slugs
+  const posts = await getFirestore().collection('posts')
+                                    .where('status', '==', 'published')
+                                    .orderBy('publishedAt', 'desc')
+                                    .orderBy('createdAt', 'desc')
+                                    .get()
+  if (!posts || posts.empty) {
+    return []
+  }
+
+  const slugs = posts.docs.map((e) => (
+    { slug: e.get('slug.current') || "not-found" }
+  ))
+
+  return slugs
 }
-// 
+
 export async function getPostBySlug(slug: string) {
-//   await initAdmin()
-//   const ss = getFirestore().collection('posts')
-//                            .where('status', '==', 'published')
-//                            .where('slug.current', '==', slug)
-//                            .get()
-//   if (ss.empty) {
-//     return null
-//   }
-//   return PostFromDoc(ss.docs.at(0))
+  const ss = await getFirestore().collection('posts')
+                                 .where('status', '==', 'published')
+                                 .where('slug.current', '==', slug)
+                                 .limit(1)
+                                 .get()
+  if (!ss || ss.empty) {
+    return null
+  }
+
+  const posts = await Promise.all(ss.docs.map(async (doc) => await postFromDoc(doc)))
+
+  return posts[0]
 }

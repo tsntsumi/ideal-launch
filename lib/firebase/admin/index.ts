@@ -42,6 +42,12 @@ export async function initAdmin() {
     clientEmail: process.env.FIREBASE_CLIENT_EMAIL as string,
     storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET as string,
     privateKey: process.env.FIREBASE_PRIVATE_KEY as string,
+
+    apiKey: process.env.NEXT_PUBLIC_LAUNCH_APIKEY,
+    authDomain: process.env.NEXT_PUBLIC_LAUNCH_AUTHDOMAIN,
+    messagingSenderId: process.env.NEXT_PUBLIC_LAUNCH_MESSAGINGSENDERID,
+    appId: process.env.NEXT_PUBLIC_LAUNCH_APPID,
+    measurementId: process.env.NEXT_PUBLIC_LAUNCH_MEASUREMENTID
   }
 
   return createFirebaseAdminApp(params)

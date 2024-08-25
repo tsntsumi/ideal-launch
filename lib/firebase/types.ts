@@ -5,6 +5,7 @@ export type Image = {
   height: number
   width: number
   src?: string | null | undefined
+  blurDataURL?: string | undefined
 }
 
 export type Slug = {
@@ -65,4 +66,62 @@ export type Settings = {
   social: Socials
   title: string
   url: string
+  openGraphImage: Image
 }
+
+export const NullSlug = {
+  current: ""
+}
+
+export const NullAuthor: Author = {
+  _id: "",
+  name: "",
+  bio: "",
+  image: {
+    alt: "",
+    caption: "",
+    asset: "",
+    width: 32,
+    height: 32,
+    src: null,
+  },
+  slug: NullSlug
+}
+
+export const NullCategory: Category = {
+  _id: "",
+  color: "",
+  count: 0,
+  description: "",
+  title: "",
+  slug: NullSlug
+}
+
+export const NullImage = {
+  alt: "",
+  asset: "",
+  caption: "",
+  height: 32,
+  width: 32
+} as Image
+
+export const NullSocials = {
+  Facebook: "",
+  Instagram: "",
+  LinkedIn: "",
+  YouTube: "",
+  Twitter: ""
+} as Socials
+
+export const NullSettings = {
+  copyright: "",
+  description: "",
+  email: "",
+  logo: NullImage,
+  logoalt: NullImage,
+  phone: "",
+  social: NullSocials,
+  title: "",
+  url: "",
+  openGraphImage: NullImage
+} as Settings

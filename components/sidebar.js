@@ -41,7 +41,7 @@ function RelatedPosts({ related, pathPrefix }) {
     <div className="mt-10">
       <h3 className="text-2xl font-bold dark:text-white">Related</h3>
       <div className="mt-6 grid gap-6">
-        {related.slice(0, 3).map((item, index) => {
+        {related?.slice(0, 3).map((item, index) => {
           const imageProps = item?.image
             ? urlForImage(item?.image)
             : null;
