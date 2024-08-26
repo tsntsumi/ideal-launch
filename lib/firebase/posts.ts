@@ -5,16 +5,6 @@ import { urlForPath } from '@/lib/firebase/storage'
 import { Image, Author, Category, Post,
          NullSlug, NullAuthor, NullCategory } from '@/lib/firebase/types'
 
-
-// async function urlForPath(bucketname: string, path: string): Promise<string> {
-//   if (!bucketname || !path) {
-//     return "/img/logo.svg"
-//   }
-//   const file = getStorage().bucket(bucketname).file(path)
-//   const url = await getDownloadURL(file)
-//   return url
-// }
-
 async function authorForSlug(slug: string) {
   const authors = await getFirestore().collection('authors')
                                       .where('slug.current', '==', slug).get()
@@ -37,7 +27,7 @@ async function authorForSlug(slug: string) {
   }
   return author
 }
-// 
+
 async function categoriesForNames(catnames: string[]): Promise<(Category)[]> {
   const cc = getFirestore().collection('categories')
   const categories = await Promise.all(catnames.map(async(cname) => {
