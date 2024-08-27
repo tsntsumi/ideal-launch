@@ -73,4 +73,8 @@
   body {
     @apply bg-background text-foreground;
   }
+  body p {
+      text-indent: 1em;
+      margin-bottom: 0.48em;
+  }
 }
