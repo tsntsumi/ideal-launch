@@ -49,14 +49,14 @@ export const SignUpForm: FC<SignUpFormProps> = ({ onShowLogin, onSignUp }) => {
       const user = await createUserWithEmailAndPassword(auth, email, password);
       if (user?.user.uid && user.user.email) {
         // create user in firestore here if you want
-        toast({ title: "Account created!" });
+        toast({ title: "アカウントを作成しました!" });
         onSignUp?.();
       }
     } catch (err: any) {
       if ("code" in err && err.code.includes("already")) {
-        toast({ title: "User already exists" });
+        toast({ title: "すでに登録されています" });
       } else {
-        toast({ title: "Error signing up", description: `${err}` });
+        toast({ title: "新規登録エラーです", description: `${err}` });
       }
     } finally {
       setIsLoading(false);
@@ -73,12 +73,12 @@ export const SignUpForm: FC<SignUpFormProps> = ({ onShowLogin, onSignUp }) => {
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email Address</FormLabel>
+                  <FormLabel>Email アドレス</FormLabel>
                   <FormControl>
                     <Input type="email" {...field} />
                   </FormControl>
                   <FormDescription>
-                    A valid email is required to watch locked specials.
+                     登録するには正しい Email アドレスが必要です。
                   </FormDescription>
                   <FormMessage />
                 </FormItem>
@@ -89,26 +89,26 @@ export const SignUpForm: FC<SignUpFormProps> = ({ onShowLogin, onSignUp }) => {
               name="password"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Password</FormLabel>
+                  <FormLabel>パスワード</FormLabel>
                   <FormControl>
                     <Input type="password" {...field} />
                   </FormControl>
                   <FormDescription>
-                    Must be at least 8 characters long.
+                    ８文字以上のパスワードを入力してください
                   </FormDescription>
                   <FormMessage />
                 </FormItem>
               )}
             />
-            <Button type="submit">Sign Up</Button>
+            <Button type="submit">新規登録</Button>
           </fieldset>
         </form>
       </Form>
 
       <p className="mt-4 text-sm">
-        Already joined?{" "}
+        すでに登録していますか?{" "}
         <Button variant="link" onClick={onShowLogin}>
-          Sign in instead.
+          ログインする
         </Button>
       </p>
     </>

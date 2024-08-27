@@ -27,9 +27,9 @@ export const AuthCard = () => {
     <>
       <Card>
         <CardHeader>
-          <CardTitle>{isShowingSignUp ? "Sign Up" : "Sign In"}</CardTitle>
+          <CardTitle>{isShowingSignUp ? "新規登録" : "ログイン"}</CardTitle>
           <CardDescription>
-            Give them a reason to {isShowingSignUp ? "sign up" : "sign in"}.
+            {isShowingSignUp ? "新規登録" : "ログイン"} のための情報を入力してください。
           </CardDescription>
         </CardHeader>
         <CardContent>

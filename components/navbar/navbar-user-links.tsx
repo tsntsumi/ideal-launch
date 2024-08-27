@@ -15,14 +15,14 @@ export const NavbarUserLinks: FC = () => {
       {hasEmitted && data ? (
         <>
           <Link href="/app" className={buttonVariants()}>
-            Dashboard
+            ダッシュボード
           </Link>
           <UserNav />
         </>
       ) : (
         <>
           <Link href="/login" className={buttonVariants()}>
-            Login / Register &rarr;
+            ログイン | 登録 &rarr;
           </Link>
         </>
       )}

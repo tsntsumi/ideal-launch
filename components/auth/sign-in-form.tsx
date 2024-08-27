@@ -67,7 +67,7 @@ export const SignInForm: FC<SignInFormProps> = ({ onShowSignUp }) => {
             name="email"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Email Address</FormLabel>
+                <FormLabel>Email アドレス</FormLabel>
                 <FormControl>
                   <Input type="email" {...field} />
                 </FormControl>
@@ -80,7 +80,7 @@ export const SignInForm: FC<SignInFormProps> = ({ onShowSignUp }) => {
             name="password"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Password</FormLabel>
+                <FormLabel>パスワード</FormLabel>
                 <FormControl>
                   <Input type="password" {...field} />
                 </FormControl>
@@ -89,20 +89,20 @@ export const SignInForm: FC<SignInFormProps> = ({ onShowSignUp }) => {
             )}
           />
           <Button type="submit" disabled={isLoading}>
-            Submit
+            ログイン
           </Button>
         </form>
       </Form>
       <p className="mt-4 text-sm">
-        Forgot password?{" "}
+        パスワードを忘れましたか?{" "}
         <Button variant="link" onClick={() => setIsResetOpen(true)}>
-          Reset
+          パスワードをリセット
         </Button>
       </p>
       <p className="text-sm">
-        Not a member?{" "}
+        登録はまだですか?{" "}
         <Button variant="link" onClick={onShowSignUp}>
-          Sign up instead.
+          新規登録
         </Button>
       </p>
       <ModalForgotPassword isOpen={isResetOpen} setIsOpen={setIsResetOpen} />

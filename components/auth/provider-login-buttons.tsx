@@ -24,11 +24,11 @@ export const ProviderLoginButtons: FC<Props> = ({ onSignIn }) => {
       setIsLoading(true);
       await signInWithPopup(auth, provider);
       // create user in your database here
-      toast({ title: "Signed in!" });
+      toast({ title: "ログインしました!" });
       onSignIn?.();
     } catch (err: any) {
       console.error(err);
-      toast({ title: "Error signing in", description: `${err}` });
+      toast({ title: "ログインエラー", description: `${err}` });
     } finally {
       setIsLoading(false);
     }
@@ -41,8 +41,8 @@ export const ProviderLoginButtons: FC<Props> = ({ onSignIn }) => {
         onClick={async () => {
           const provider = new GoogleAuthProvider();
           toast({
-            title: "Oops!",
-            description: "Provider not configured, yet.",
+            title: "おっと!",
+            description: "まだ、プロバイダーがセットアップされてません.",
           });
           // await doProviderSignIn(provider);
         }}
@@ -58,21 +58,21 @@ export const ProviderLoginButtons: FC<Props> = ({ onSignIn }) => {
         </svg>
         Google
       </Button>
-      <Button
+    {/* <Button
         className="w-full"
         disabled={isLoading}
         onClick={async () => {
-          const provider = new GithubAuthProvider();
-          toast({
-            title: "Oops!",
-            description: "Provider not configured, yet.",
-          });
-          // await doProviderSignIn(provider);
+        const provider = new GithubAuthProvider();
+        toast({
+        title: "Oops!",
+        description: "Provider not configured, yet.",
+        });
+        // await doProviderSignIn(provider);
         }}
-      >
+        >
         <GithubIcon className="w-4 h-4 mr-2" />
         Github
-      </Button>
+        </Button> */}
     </>
   );
 };

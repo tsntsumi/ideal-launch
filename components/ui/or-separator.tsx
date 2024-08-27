@@ -19,7 +19,7 @@ const OrSeparator = React.forwardRef<
     {...props}
   >
     <Separator className="shrink" />
-    <span className="whitespace-nowrap text-sm">or continue with</span>
+    <span className="whitespace-nowrap text-sm">または、こちらで続ける</span>
     <Separator className="shrink" />
   </div>
 ));

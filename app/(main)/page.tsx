@@ -17,143 +17,73 @@ export default function Home() {
       <div className="grow flex flex-col items-center justify-evenly">
         <section className="space-y-6">
           <div className="container flex flex-col items-center gap-8 text-center">
-            <Badge variant="secondary">Now using the app router!</Badge>
-            <Badge className="space-x-4 font-normal text-sm">
-              <p>
-                <span className="font-bold">Ve</span>rcel
-              </p>
-              <p>
-                <span className="font-bold">Ne</span>xt.js
-              </p>
-              <p>
-                <span className="font-bold">Fi</span>rebase
-              </p>
-              <p>
-                <span className="font-bold">sh</span>adcn/ui
-              </p>
+            <Badge className="space-x-4 font-normal text-sm bg-pink-600">
+              プログラマーって、もっと自由で創造的な仕事かと思っていた...
             </Badge>
-            <h1 className="max-w-4xl font-heading font-semibold text-3xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tighter">
-              Quickly start building your next billion dollar app.
-            </h1>
-            <p className="max-w-2xl leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-              Boilerplate &amp; template for React projects using Next.js,
-              shadcn/ui, Tailwind and Firebase...and TypeScript, of course!
-            </p>
-            <div className="space-x-4">
-              <Link href="/login">
-                <Button size="lg">Call to Action!</Button>
+    <h1 className="max-w-4xl font-heading font-semibold text-3xl sm:text-5xl md:text-6xl lg:text-7xl tracking-tighter">
+      憧れていた仕事だったのに、こんなはずじゃなかったと後悔しているプログラマーのあなたへ
+    </h1>
+    <div className="max-w-2xl leading-normal text-muted-foreground sm:text-xl sm:leading-8">
+      <p>
+      それでも、プログラミング自体は面白いし、
+      クライアントは喜んでくれるし、
+      そこそこ給料はいいから、
+      今すぐやめたいってわけじゃない。
+    </p>
+    <p className="mt-4">
+      でも、人間関係がうまくいってなかったり、
+      仕事のやり方に不満があったりして、嫌々仕事をしていませんか？
+    </p>
+    </div>
+    <div className="space-x-4">
+      <Link href="/login">
+        <Button size="lg">Call to Action!</Button>
+      </Link>
+    </div>
+    </div>
+    </section>
+    <section className="container mt-8">
+      <div className="grid grid-cols-1 lg:grid-cols-1 gap-6 items-center">
+        <div>
+          <Card className=" shadow-orange-200 shadow-md border-orange-400">
+            <CardHeader>
+              <CardTitle>毒上司と折り合いをつけて、平穏に仕事をする方法を知りたいですか？</CardTitle>
+              <CardDescription>
+                楽しく仕事をしたいとまでは言わないけど、平穏に仕事をこなしていければいいと思っているなら、私たちのメソッドをチェックしてみてください。
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p>
+                アリザ・アイデアルの堤紀久夫は、こんなに面白くて、
+                自分に合っている仕事はないと胸を躍らせて、人工知能プログラマーの仕事を選びました。
+                入社後すぐに派遣された研究所では、人工知能システムの開発を行い、
+                上司や先輩にも恵まれ、楽しく仕事をこなしていました。
+                時には深夜まで残業することもありましたが、辛いと思ったことはありませんでした。
+              </p>
+              <p>
+                しかし、転機が訪れたのは、２年間の派遣期間が過ぎ、地方にある本社に帰任してからでした。
+                そこには、毒上司や毒先輩たちが跋扈していたのです。わたしはたちまち神経性胃炎になりました。
+              </p>
+              <p>
+                しかし、それは予兆に過ぎませんでした。それから何年か過ぎたあとのことです。
+                わたしはそれから抑うつ状態になり、休職せざるを得なくなったのです・・・。
+              </p>
+              <p>それから１０年間闘病し、復職することに成功し、１２年以上平穏に過ごすことができました。</p>
+              <Link
+                className={cn(
+                  buttonVariants({ variant: "orange", size: "xl" }),
+                  "mt-4 w-full"
+                )}
+                href="https://enesien.com?utm_source=venefish"
+              >
+                その秘訣を知る...
               </Link>
-              <Link target="_blank" href="https://github.com/enesien/venefish">
-                <Button size="lg" variant="link">
-                  View Project on GitHub &rarr;
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </section>
-        <section className="container mt-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
-            <div>
-              <Card className=" shadow-teal-200 shadow-md border-teal-400">
-                <CardHeader>
-                  <CardTitle>Need advanced data parsing?</CardTitle>
-                  <CardDescription>
-                    Check out BestParse/AI for all your parsing needs.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Link
-                    href="https://bestparse.com?utm_source=venefish"
-                    target="_blank"
-                    className="underline text-slate-800 font-medium"
-                  >
-                    BestParse/AI
-                  </Link>{" "}
-                  can parse any text to JSON. It's free to use and and gives you
-                  great results when extracting and parsing scraped data, logs,
-                  or any other raw text.
-                  <p className="mt-4 font-semibold">
-                    20% off the pro plan with code "VENEFISH"
-                  </p>
-                  <Link
-                    className={cn(
-                      buttonVariants({ size: "xl", variant: "teal" }),
-                      "mt-4 w-full"
-                    )}
-                    href="https://bestparse.com?utm_source=venefish"
-                  >
-                    Try BestParse/AI &rarr;
-                  </Link>
-                </CardContent>
-              </Card>
-            </div>
-            <div>
-              <Card className=" shadow-slate-200 shadow-md border-slate-400">
-                <CardHeader>
-                  <CardTitle>Looking for a job?</CardTitle>
-                  <CardDescription>
-                    Use JobLogr for free to track your job applications.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Link
-                    href="https://joblogr.com?utm_source=venefish"
-                    target="_blank"
-                    className="underline text-slate-800 font-medium"
-                  >
-                    JobLogr.com
-                  </Link>{" "}
-                  is a free tool to track your job applications. It's simple to
-                  use and helps you keep track of all your job applications. No
-                  downloads required. Completely free and mobile friendly.
-                  <Link
-                    className={cn(
-                      buttonVariants({ size: "xl" }),
-                      "mt-4 w-full"
-                    )}
-                    href="https://bestparse.com?utm_source=venefish"
-                  >
-                    Use JobLogr for Free
-                  </Link>
-                </CardContent>
-              </Card>
-            </div>
-            <div>
-              <Card className=" shadow-orange-200 shadow-md border-orange-400">
-                <CardHeader>
-                  <CardTitle>Need web development?</CardTitle>
-                  <CardDescription>
-                    Check out Enesien Software for all your web development
-                    needs.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <Link
-                    href="https://enesien.com?utm_source=venefish"
-                    target="_blank"
-                    className="underline text-slate-800 font-medium"
-                  >
-                    Enesien Software
-                  </Link>{" "}
-                  is a web development company that specializes in building
-                  custom web applications. We use modern technologies and
-                  frameworks to build scalable and maintainable web
-                  applications.
-                  <Link
-                    className={cn(
-                      buttonVariants({ variant: "orange", size: "xl" }),
-                      "mt-4 w-full"
-                    )}
-                    href="https://enesien.com?utm_source=venefish"
-                  >
-                    Learn More &rarr;
-                  </Link>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </section>
+            </CardContent>
+          </Card>
+        </div>
       </div>
+    </section>
+    </div>
     </>
   );
 }
