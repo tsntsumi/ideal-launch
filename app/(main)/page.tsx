@@ -36,10 +36,13 @@ export default function Home() {
         興味の持てないプロジェクトばかりで、
         嫌々仕事をしていませんか？
       </p>
+      <p>嫌々仕事をしていても、プライベートでは幸福感を得られます。</p>
+      <p>しかし、人生での充実感は得られません。</p>
+      <p>充実感を感じられてこそ、幸福感を最大にすることができます。</p>
     </div>
     <div className="space-x-4">
-      <Link href="/login">
-        <Button size="lg">ニュースレターを購読</Button>
+      <Link href="/blog">
+        <Button size="lg">ブログを読む</Button>
       </Link>
     </div>
     </div>
