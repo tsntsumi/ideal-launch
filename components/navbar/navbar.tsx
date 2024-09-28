@@ -13,21 +13,19 @@ export const NavBar: FC = () => {
         <nav className="container px-6 md:px-8 py-4">
           <div className="flex items-center">
             <Link href="/" className="hover:opacity-80 transition-opacity">
-              <div className="flex items-center">
-                <Image src="/logo.svg" alt="logo" width="128" height="128" className="w-8 h-8 mr-2 inline" />
-                <span className="text-xs font-semibold text-slate-800 mr-6 [transform:scale(1,2.5)] [letter-spacing:-2px]">アリザ・アイデアル<span className="[letter-spacing:1px]"> | ai</span></span>
-    </div>
-    </Link>
+                <Image src="/logo.svg" alt="logo" width="128" height="128" className="w-16 h-16 pb-4 mr-0 inline-block" />
+                <div className="inline-block text-xs"><div>アリザ・</div><div>アイデアル</div></div>
+            </Link>
     <div className="hidden md:flex justify-between grow">
       <div>
-        <Link href="#1" className={buttonVariants({ variant: "link" })}>
-          Item 1
+        <Link href="/" className={buttonVariants({ variant: "link" })}>
+          🏡ホーム
         </Link>
-        <Link href="#2" className={buttonVariants({ variant: "link" })}>
-          Item 2
+        <Link href="/blog" className={buttonVariants({ variant: "link" })}>
+          📖ブログ
         </Link>
-        <Link href="#3" className={buttonVariants({ variant: "link" })}>
-          Item 3
+        <Link href="/archive" className={buttonVariants({ variant: "link" })}>
+          📚アーカイブ
         </Link>
       </div>
       <div className="flex items-center space-x-4">
