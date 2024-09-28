@@ -6,8 +6,6 @@ import { useFirestore, useFirestoreCollectionData,
 import { collection, query, where, limit, orderBy } from 'firebase/firestore'
 import { stringFromTimestamp } from '@/lib/utils'
 
-//import { getPaginatedPosts } from "@/lib/sanity/client";
-
 function getPaginatedPosts(params: any) {
   const from = params.pageIndex
   const to = params.limit

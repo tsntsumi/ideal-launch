@@ -28,7 +28,7 @@ export default function PostList({
         )}>
         <div
           className={cx(
-            " overflow-hidden rounded-md bg-gray-100 transition-all hover:scale-105   dark:bg-gray-800"
+            " mb-4 overflow-hidden rounded-md bg-gray-100 transition-all hover:scale-105 dark:bg-gray-800"
           )}>
           <Link
             className={cx(
@@ -44,16 +44,16 @@ export default function PostList({
             }`}>
             <Image
               image={post.mainImage}
-                {...(post.mainImage.blurDataURL && {
-                  placeholder: "blur",
-                  blurDataURL: post.mainImage.blurDataURL
-                })}
-                alt={post.mainImage.alt || "Thumbnail"}
-                priority={preloadImage ? true : false}
-                className="object-cover transition-all"
-                fill
-                sizes="(max-width: 768px) 30vw, 33vw"
-              />
+              {...(post.mainImage.blurDataURL && {
+                placeholder: "blur",
+                blurDataURL: post.mainImage.blurDataURL
+              })}
+              alt={post.mainImage.alt || "Thumbnail"}
+              priority={preloadImage ? true : false}
+              className="object-cover transition-all"
+              fill
+              sizes="(max-width: 768px) 30vw, 33vw"
+            />
           </Link>
     </div>
 

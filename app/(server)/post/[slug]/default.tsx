@@ -10,6 +10,7 @@ import Container from "@/components/container";
 import CategoryLabel from "@/components/blog/category";
 import { parseISO, format } from "date-fns";
 import BodyContent, {Summary} from '@/components/blog/bodycontents'
+import { Toaster } from "@/components/ui/toaster";
 
 function PostPage(props) {
   const { loading, post } = props
@@ -92,12 +93,13 @@ function PostPage(props) {
 
 export default function Page(props) {
   return (
-      <div className="flex flex-col min-h-screen animate-in fade-in">
-        <NavBar />
-        <div className="flex flex-col grow h-full">
-          <PostPage {...props} />
-        </div>
-        <Footer />
+    <div className="flex flex-col min-h-screen animate-in fade-in">
+      <NavBar />
+      <div className="flex flex-col grow h-full">
+        <PostPage {...props} />
+        <Toaster />
       </div>
+      <Footer />
+    </div>
   )
 }

@@ -6,10 +6,10 @@ import { collection, query, where } from 'firebase/firestore'
 
 export default function CategoryLabel({
   categories,
-  nomargin = false
+  nomargin = ""
 }: {
   categories: string[]
-  nomargin?: boolean
+  nomargin?: string
 }) {
   const firestore = useFirestore()
   const c = collection(firestore, 'categories')

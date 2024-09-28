@@ -12,7 +12,7 @@ export default async function ArchivePage({ searchParams }: { searchParams: any 
     <>
       <Container className="relative">
         <h1 className="text-center text-3xl font-semibold tracking-tight dark:text-white lg:text-4xl lg:leading-snug">
-          Archive
+          アーカイブ
         </h1>
         <div className="text-center">
           <p className="mt-2 text-lg">
