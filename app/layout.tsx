@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
 import { Work_Sans } from "next/font/google";
+//import "@/styles/tailwind.css";
 import "@/app/globals.css";
 import { cn } from "@/lib/utils";
-import { MyFirebaseProvider } from "@/components/firebase-providers";
 import { Toaster } from "@/components/ui/toaster";
 import { ReactNode } from "react";
+import { MyFirebaseProvider } from "@/components/firebase-providers";
 
 const font = Work_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Venefish | Vercel Next.JS Firebase Shadcn/ui Tailwind Boilerplate",
+  title: "プログラマが充実した仕事をする",
   description:
-    "Venefish is a Vercel Next.JS Firebase Shadcn/ui Tailwind Boilerplate project to help you get started with your next project.",
+    "仕事でプログラミングを楽しめていますか？仕事を楽しめなかったら、充実感を味わえません。充実感がなかったら、たとえ幸福でも人生は虚しいものです。充実した仕事をするための情報を発信しています。ぜひブログをお読みください。",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
